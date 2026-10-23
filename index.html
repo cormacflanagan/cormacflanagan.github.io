@@ -1271,15 +1271,29 @@
         <span class="paperlinks">(<a href="papers/20oopsla.pdf">OOPSLA’20</a>, <a href="papers/24ecoop.pdf">ECOOP’24</a>, <a href="https://melvin-demo.gss8b1ryfh8jc.us-east-1.cs.amazonlightsail.com/">Melvin demo</a>)</span>
       </div>
     </li>
-  </ul>
-  <ul class="list">
-    <li>Information Flow Control <span class="paperlinks">(<a href="papers/fast-and-slowTR.pdf">TR’21</a>, <a href="papers/20csf.pdf">CSF’20</a>, <a href="papers/19csf.pdf">CSF’19</a>, <a href="papers/18oopsla.pdf">OOPSLA’18</a>, <a href="papers/18ccs.pdf">CCS’18</a>, <a href="papers/18www.pdf">WWW’18</a>, <a href="papers/toplas17.pdf">TOPLAS’17</a>, <a href="papers/17plas.pdf">PLAS’17</a>, <a href="papers/16pldi.pdf">PLDI’16</a>, <a href="papers/16post.pdf">POST’16</a>, <a href="papers/UCSC-SOE-14-07.pdf">TR’14</a>, <a href="papers/plas13.pdf">PLAS’13</a>, <a href="papers/aplas12.pdf">APLAS’12</a>, <a href="papers/popl12b.pdf">POPL’12</a>, <a href="papers/stop11.pdf">STOP’11</a>, <a href="papers/plas10.pdf">PLAS’10</a>, <a href="papers/plas09.pdf">PLAS’09</a>)</span></li>
-    <li><a href="https://www.cs.williams.edu/~freund/races/index.html">Data Race Detection</a></li>
-    <li><a href="https://www.cs.williams.edu/~freund/rr/">RoadRunner</a>: A Dynamic Analysis Infrastructure</li>
-    <li><a href="https://www.cs.williams.edu/~freund/coop/">Cooperable Concurrency: A Concurrent Programming Methodology</a></li>
+    <li>
+      <img src="images/ifc.png" alt="" width="64" height="64">
+      <div>
+        <span class="pname">Information Flow Control</span>: Dynamic Enforcement of Confidentiality
+        <p>Information flow control ensures that programs cannot leak confidential data to unauthorized observers. This project developed purely dynamic enforcement mechanisms, notably faceted execution, which simulates a separate run of the program for each observer, and applied them to web browsers, database-backed applications, and serverless computing.</p>
+        <span class="paperlinks">(<a href="papers/fast-and-slowTR.pdf">TR’21</a>, <a href="papers/20csf.pdf">CSF’20</a>, <a href="papers/19csf.pdf">CSF’19</a>, <a href="papers/18oopsla.pdf">OOPSLA’18</a>, <a href="papers/18ccs.pdf">CCS’18</a>, <a href="papers/18www.pdf">WWW’18</a>, <a href="papers/toplas17.pdf">TOPLAS’17</a>, <a href="papers/17plas.pdf">PLAS’17</a>, <a href="papers/16pldi.pdf">PLDI’16</a>, <a href="papers/16post.pdf">POST’16</a>, <a href="papers/UCSC-SOE-14-07.pdf">TR’14</a>, <a href="papers/plas13.pdf">PLAS’13</a>, <a href="papers/aplas12.pdf">APLAS’12</a>, <a href="papers/popl12b.pdf">POPL’12</a>, <a href="papers/stop11.pdf">STOP’11</a>, <a href="papers/plas10.pdf">PLAS’10</a>, <a href="papers/plas09.pdf">PLAS’09</a>)</span>
+      </div>
+    </li>
   </ul>
   <h3>Earlier</h3>
+  <ul class="projects">
+    <li>
+      <img src="images/roadrunner.png" alt="" width="64" height="64">
+      <div>
+        <a class="pname" href="https://www.cs.williams.edu/~freund/rr/">RoadRunner</a>: A Dynamic Analysis Framework for Concurrent Programs
+        <p>RoadRunner instruments Java bytecode to produce a stream of events (memory accesses, lock operations, thread forks and joins) that analysis tools such as FastTrack consume, making it easy to prototype and compose dynamic analyses for concurrent programs.</p>
+        <span class="paperlinks">(<a href="papers/paste10.pdf">PASTE’10</a>)</span>
+      </div>
+    </li>
+  </ul>
   <ul class="list">
+    <li><a href="https://www.cs.williams.edu/~freund/races/index.html">Data Race Detection</a></li>
+    <li><a href="https://www.cs.williams.edu/~freund/coop/">Cooperable Concurrency: A Concurrent Programming Methodology</a></li>
     <li><a href="atom.html">Atomicity</a></li>
     <li>Hybrid Type Checking <span class="paperlinks">(<a href="papers/popl06-hybrid.pdf">POPL’06</a>, <a href="papers/toplas09.pdf">TOPLAS’10</a>, <a href="papers/sage-tr.pdf">Sage technical report</a>)</span></li>
     <li>Extended Static Checking <span class="paperlinks">(<a href="papers/popl01.pdf">POPL’01</a>, <a href="talks/popl2001.ppt">POPL’01.ppt</a>, <a href="papers/pldi02.pdf">PLDI’02</a>, <a href="papers/popl02.pdf">POPL’02</a>)</span></li>

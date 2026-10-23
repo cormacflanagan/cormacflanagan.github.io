@@ -190,8 +190,7 @@ h2 + h3 { margin-top: 0; }
 
 .cols { columns: 2 18rem; column-gap: 2.5rem; }
 
-.dated > li { display: grid; grid-template-columns: 7.5rem 1fr; gap: 1rem; }
-.dated .years { color: var(--muted); font-variant-numeric: tabular-nums; }
+.years { color: var(--muted); white-space: nowrap; }
 .cols > li { break-inside: avoid; }
 
 /* Award cards */
@@ -262,7 +261,6 @@ footer .wrap { display: flex; justify-content: space-between; gap: 1rem; flex-wr
   .hero { grid-template-columns: 1fr; gap: 1.25rem; padding-top: 2rem; }
   .portrait { width: 9.5rem; }
   .hero h1 { font-size: 2.1rem; }
-  .dated > li { grid-template-columns: 1fr; gap: 0; }
   .cites > li { grid-template-columns: 1fr; }
   .cites .tag { padding: 0 0 0.1rem; }
   h2 { font-size: 1.4rem; }

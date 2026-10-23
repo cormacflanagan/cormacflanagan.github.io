@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><title>PLDI 2005 Tutorial: Atomicity</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta content="PLDI 2005 Tutorial" name="description">
+<meta content="PLDI 2005, Programmming Language Design and Implementation, SIGPLAN conference, ACM conference, compiler conference, tutorials" name="keywords">
+<link rel="StyleSheet" href="atomicity-tutorial_files/pldi05.css" type="text/css" media="screen"></head>
+
+<body> <h1 class="title">Atomicity for Reliable Concurrent Software</h1> <hr> <div align="left"><b>Presenters:</b> Cormac Flanagan and Shaz Qadeer </div> <p> Multithreaded programs are notoriously prone to errors caused by unintended
+  interference between concurrent threads. Better methods for specifying and
+  controlling such interference are clearly necessary. 
+</p><p> Atomicity is a simple yet powerful specification that guarantees the absence
+  of errors due to unintended interference. A method is <i>atomic</i> (or <i>serializable</i>)
+  if its execution is not affected by and does not interfere with concurrently-executing
+  threads. In particular, atomic methods can be understood according to their
+  sequential semantics, which significantly simplifies formal and informal correctness
+  arguments and subsequent validation activities such as code inspection and
+  testing. Atomicity violations often indicate subtle defects in a program's
+  synchronization structure, including some defects that would be missed by traditional
+  approaches focused on race detection. </p> <p> Over the past few years, researchers have shown that atomicity is a natural,
+  useful, and widely-applicable specification mechanism for many concurrent programs.
+  A rich set of analysis techniques have been developed for verifying atomicity.
+  This four hour tutorial will survey the current state-of-the-art in practical
+  techniques and tools for leveraging atomicity in the development of reliable
+  multithreaded software systems, and will illustrate the kinds of subtle synchronization
+  defects that have been caught with these tools. </p> <h4 style="text-align: left;"> Part I: Introduction</h4> <ul>   <li> Definition of atomicity (and its difference from data-race freedom)
+  </li><li> Lipton's theory of reduction
+</li></ul> <h4 style="text-align: left;">Part II: Dynamic verification of atomicity</h4> <ul>   <li> Lockset algorithm (and its extensions)
+  </li><li> How to perform reduction at run-time
+  </li><li> Experimental results and illustrative synchronization defects
+</li></ul> <h4 style="text-align: left;">Part III: Type systems for atomicity</h4> <ul>   <li> Type checking for race freedom
+  </li><li> Type checking for atomicity - performing reduction at compile time
+  </li><li> Type inference for atomicity - detecting atomicity violations in legacy
+    code
+  </li><li> Exploiting <i>purity</i> for atomicity, and how to verify atomicity of
+    lock-free (non-blocking) algorithms
+</li></ul> <h4 style="text-align: left;">Part IV: Model checking for atomicity</h4> <ul>   <li> How to perform reduction during model checking
+  </li><li> Commit-atomicity and its verification by model checking
+  </li><li> Leveraging atomicity for precise interprocedural analysis of concurrent
+    programs
+</li></ul> <h3 style="text-align: left;">Presenter Biography Information</h3> <table style="border: 0px solid ; text-align: left; width: 100%;" border="0">   <tbody>     <tr>       <td style="border: 0px none ;"> <img style="border: 2px solid ; width: 100px;" src="atomicity-tutorial_files/cormac.gif"> </td>       <td style="border: 0px none ; text-align: left;"> <a href="http://www.soe.ucsc.edu/%7Ecormac/">Cormac
+          Flanagan</a> is a faculty member in the Computer Science Department
+          at the University of California, Santa Cruz, and previously was a research
+          scientist for Digital, Compaq, and HP. His research focuses on static
+          and dynamic checking tools that improve program reliability and reduce
+          development cost, with a particular focus on concurrent software systems.
+          He is the recipient of a Sloan Foundation Fellowship, and received
+          his Ph.D. from Rice University in 1997. </td>     </tr>     <tr>       <td style="border: 0px none ;"> <img style="border: 2px solid ; width: 100px;" src="atomicity-tutorial_files/qadeer.gif"> </td>       <td style="border: 0px none ; text-align: left;"> <a href="http://research.microsoft.com/%7Eqadeer/">Shaz Qadeer</a> is a member
+        of the Software Productivity Tools group at Microsoft Research. Before
+        joining Microsoft Research, he was a member of the research staff at
+        the <st1:place u1:st="on"><st1:placename u1:st="on">Compaq</st1:placename> <st1:placename u1:st="on">Systems</st1:placename> <st1:placename u1:st="on">Research</st1:placename> <st1:placetype u1:st="on">Center</st1:placetype></st1:place> from
+        1999 to 2002. <span class="spelle">Shaz</span> received his Ph.D. from
+        the EECS Department of the <st1:placetype u1:st="on">University</st1:placetype> of <st1:placename u1:st="on">California</st1:placename> at <st1:city u1:st="on"><st1:place u1:st="on">Berkeley</st1:place></st1:city> </td>     </tr>   </tbody> </table> </body></html>

@@ -1,0 +1,92 @@
+
+BODY
+{
+  text-align: center;
+  background: url(acmlite.gif);
+  margin: 5% 7% 7% 7%; 
+}
+
+A
+{
+  background-color: transparent;
+  color: rgb(0,100,0);
+}
+
+A.ref
+{
+  background-color: transparent;
+  color: black;
+}
+
+P
+{
+  text-align: justify;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding-top: 1ex;
+  margin-top: 1ex;
+  margin-bottom: 1ex;
+}
+
+P.bottom { padding-bottom: 50ex; }
+H2 { width: 90%; }
+H3 { width: 90%; }
+UL { margin-bottom: 0; }
+LI { margin-left: 3em; text-align: left; }
+ADDRESS { text-align: left; } 
+
+.left { float: left; }
+.right { float: right; }
+.center { text-align: center; }
+
+H1.title
+{
+   margin-top: 3ex;
+   font-style: italic;
+   font-size: x-large;
+   margin-bottom: 2ex;
+}
+H2.author { margin-top: 0; font-size: large; margin-bottom: 2ex; }
+H2.time { margin-top: .5ex; font-size: medium; margin-bottom: .5ex; }
+H2.bio { font-size: medium; }
+
+.bold { font-weight: bold; }
+.largebold { font-size: x-large; font-weight: bold; }
+.mediumbold { font-size: medium; font-weight: bold; }
+.small { font-size: medium; }
+
+TABLE
+{
+  border-style: solid;
+  border-width: medium;
+  margin: 3ex 1em;
+}
+
+TABLE.open
+{
+  border-style: none;
+}  
+
+TR {text-align: center;}
+
+TD
+{
+  border-style: solid;
+  border-width: thin;
+  padding: 1ex 1em;
+}
+
+TD.title { font-style: italic; }
+TD.time { font-weight: bold; }
+
+IMG
+{
+  margin-top: 1ex;
+  margin-bottom: 1ex;
+} 
+
+HR
+{
+  margin-top: 3ex;
+  margin-bottom: 3ex;
+}  

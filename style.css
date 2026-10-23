@@ -213,6 +213,7 @@ h2 + h3 { margin-top: 0; }
 .pubs > li:last-child { border-bottom: 0; }
 .pubs > li > a:first-child, .pubs .title { font-weight: 550; line-height: 1.4; }
 .pubs .title { color: var(--text); }
+.pubs .authors { margin-top: 0.1rem; font-size: 0.9rem; line-height: 1.45; }
 
 .meta {
   display: flex;

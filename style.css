@@ -214,6 +214,9 @@ h2 + h3 { margin-top: 0; }
 .pubs > li > a:first-child, .pubs .title { font-weight: 550; line-height: 1.4; }
 .pubs .title { color: var(--text); }
 .pubs .authors { margin-top: 0.1rem; font-size: 0.9rem; line-height: 1.45; }
+.cites > li { display: grid; grid-template-columns: 8rem 1fr; gap: 0 1.25rem; }
+.cites .tag { padding-top: 0.15rem; color: var(--muted); font-size: 0.85rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+.cites .body > a:first-child { font-weight: 550; line-height: 1.4; }
 
 .meta {
   display: flex;
@@ -260,6 +263,8 @@ footer .wrap { display: flex; justify-content: space-between; gap: 1rem; flex-wr
   .portrait { width: 9.5rem; }
   .hero h1 { font-size: 2.1rem; }
   .dated > li { grid-template-columns: 1fr; gap: 0; }
+  .cites > li { grid-template-columns: 1fr; }
+  .cites .tag { padding: 0 0 0.1rem; }
   h2 { font-size: 1.4rem; }
 }
 

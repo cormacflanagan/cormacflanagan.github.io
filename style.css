@@ -194,6 +194,7 @@ h2 + h3 { margin-top: 0; }
 
 .years { color: var(--muted); white-space: nowrap; }
 .cols > li { break-inside: avoid; }
+.alumni .thesis { margin-top: 0.1rem; color: var(--muted); font-size: 0.9rem; }
 
 /* Award cards */
 

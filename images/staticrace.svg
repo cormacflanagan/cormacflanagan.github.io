@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef7f6"/><stop offset="1" stop-color="#d6ebe8"/></linearGradient></defs>
+<rect width="200" height="200" fill="url(#bg)"/>
+
+<line x1="56" y1="30" x2="56" y2="178" stroke="#5c676e" stroke-width="8" stroke-linecap="round"/>
+<g><rect x="60" y="36" width="22" height="22" fill="#004c4c"/><rect x="60" y="58" width="22" height="22" fill="#fdf6e3"/><rect x="60" y="80" width="22" height="22" fill="#004c4c"/><rect x="60" y="102" width="22" height="22" fill="#fdf6e3"/><rect x="82" y="36" width="22" height="22" fill="#fdf6e3"/><rect x="82" y="58" width="22" height="22" fill="#004c4c"/><rect x="82" y="80" width="22" height="22" fill="#fdf6e3"/><rect x="82" y="102" width="22" height="22" fill="#004c4c"/><rect x="104" y="36" width="22" height="22" fill="#004c4c"/><rect x="104" y="58" width="22" height="22" fill="#fdf6e3"/><rect x="104" y="80" width="22" height="22" fill="#004c4c"/><rect x="104" y="102" width="22" height="22" fill="#fdf6e3"/><rect x="126" y="36" width="22" height="22" fill="#fdf6e3"/><rect x="126" y="58" width="22" height="22" fill="#004c4c"/><rect x="126" y="80" width="22" height="22" fill="#fdf6e3"/><rect x="126" y="102" width="22" height="22" fill="#004c4c"/><rect x="148" y="36" width="22" height="22" fill="#004c4c"/><rect x="148" y="58" width="22" height="22" fill="#fdf6e3"/><rect x="148" y="80" width="22" height="22" fill="#004c4c"/><rect x="148" y="102" width="22" height="22" fill="#fdf6e3"/></g>
+<rect x="60" y="36" width="110" height="88" fill="none" stroke="#004c4c" stroke-width="3"/>
+<path d="M126 132 V120 a14 14 0 0 1 28 0 V132" fill="none" stroke="#e0a030" stroke-width="7" stroke-linecap="round"/>
+<rect x="118" y="130" width="44" height="36" rx="6" fill="#e0a030"/>
+<circle cx="140" cy="146" r="5" fill="#004c4c"/><rect x="137.5" y="148" width="5" height="10" rx="2" fill="#004c4c"/>
+</svg>

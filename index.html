@@ -91,7 +91,7 @@
       <img src="images/flowbook.png" alt="" width="64" height="64">
       <div>
         <a class="pname" href="https://arxiv.org/abs/2605.01560">FlowBook</a>: Enforcing Reproducibility in Computational Notebooks
-        <p>FlowBook is a JupyterLab extension that enforces rerun consistency: re-executing any cell from the current state would produce a result consistent with a top-to-bottom execution of the notebook, regardless of which cells have been run, modified, and rerun.</p>
+        <p>A JupyterLab extension guaranteeing that rerunning any cell gives the same result as running the notebook top to bottom.</p>
         <span class="paperlinks">(<a href="https://arxiv.org/abs/2605.01560">arXiv’26</a>)</span>
       </div>
     </li>
@@ -99,7 +99,7 @@
       <img src="images/keystone.png" alt="" width="64" height="64">
       <div>
         <a class="pname" href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2243637">Keystone</a>: Modular Concurrent Software Verification
-        <p>Keystone addresses the fundamental challenge of concurrent software verification: specifying and reasoning about thread interference. The project leverages a new specification notation for thread interference, embeds those specifications into a new program logic, called Mover Logic, and explores new accompanying verification techniques.</p>
+        <p>Specifying and reasoning about thread interference with Mover Logic, a program logic for modular verification of concurrent software.</p>
         <span class="paperlinks">(<a href="papers/20oopsla.pdf">OOPSLA’20</a>, <a href="papers/24ecoop.pdf">ECOOP’24</a>, <a href="https://melvin-demo.gss8b1ryfh8jc.us-east-1.cs.amazonlightsail.com/">Melvin demo</a>)</span>
       </div>
     </li>
@@ -107,7 +107,7 @@
       <img src="images/ifc.png" alt="" width="64" height="64">
       <div>
         <span class="pname">Information Flow Control</span>: Dynamic Enforcement of Confidentiality
-        <p>Information flow control ensures that programs cannot leak confidential data to unauthorized observers. This project developed purely dynamic enforcement mechanisms, notably faceted execution, which simulates a separate run of the program for each observer, and applied them to web browsers, database-backed applications, and serverless computing.</p>
+        <p>Dynamic mechanisms, notably faceted execution, that stop programs leaking confidential data, applied to browsers, database-backed applications, and serverless computing.</p>
         <span class="paperlinks">(<a href="papers/fast-and-slowTR.pdf">TR’21</a>, <a href="papers/20csf.pdf">CSF’20</a>, <a href="papers/19csf.pdf">CSF’19</a>, <a href="papers/18oopsla.pdf">OOPSLA’18</a>, <a href="papers/18ccs.pdf">CCS’18</a>, <a href="papers/18www.pdf">WWW’18</a>, <a href="papers/toplas17.pdf">TOPLAS’17</a>, <a href="papers/17plas.pdf">PLAS’17</a>, <a href="papers/16pldi.pdf">PLDI’16</a>, <a href="papers/16post.pdf">POST’16</a>, <a href="papers/UCSC-SOE-14-07.pdf">TR’14</a>, <a href="papers/plas13.pdf">PLAS’13</a>, <a href="papers/aplas12.pdf">APLAS’12</a>, <a href="papers/popl12b.pdf">POPL’12</a>, <a href="papers/stop11.pdf">STOP’11</a>, <a href="papers/plas10.pdf">PLAS’10</a>, <a href="papers/plas09.pdf">PLAS’09</a>)</span>
       </div>
     </li>
@@ -1289,22 +1289,90 @@
       <img src="images/roadrunner.png" alt="" width="64" height="64">
       <div>
         <a class="pname" href="https://www.cs.williams.edu/~freund/rr/">RoadRunner</a>: A Dynamic Analysis Framework for Concurrent Programs
-        <p>RoadRunner instruments Java bytecode to produce a stream of events (memory accesses, lock operations, thread forks and joins) that analysis tools such as FastTrack consume, making it easy to prototype and compose dynamic analyses for concurrent programs.</p>
+        <p>A framework for prototyping and composing dynamic analyses of concurrent Java programs, such as FastTrack.</p>
         <span class="paperlinks">(<a href="papers/paste10.pdf">PASTE’10</a>)</span>
       </div>
     </li>
-  </ul>
-  <ul class="list">
-    <li><a href="https://www.cs.williams.edu/~freund/races/index.html">Data Race Detection</a></li>
-    <li><a href="https://www.cs.williams.edu/~freund/coop/">Cooperable Concurrency: A Concurrent Programming Methodology</a></li>
-    <li><a href="atom.html">Atomicity</a></li>
-    <li>Hybrid Type Checking <span class="paperlinks">(<a href="papers/popl06-hybrid.pdf">POPL’06</a>, <a href="papers/toplas09.pdf">TOPLAS’10</a>, <a href="papers/sage-tr.pdf">Sage technical report</a>)</span></li>
-    <li>Extended Static Checking <span class="paperlinks">(<a href="papers/popl01.pdf">POPL’01</a>, <a href="talks/popl2001.ppt">POPL’01.ppt</a>, <a href="papers/pldi02.pdf">PLDI’02</a>, <a href="papers/popl02.pdf">POPL’02</a>)</span></li>
-    <li>Static Race Detection <span class="paperlinks">(<a href="papers/esop99.pdf">ESOP’99</a>, <a href="papers/concur99.pdf">CONCUR’99</a>, <a href="papers/pldi00.pdf">PLDI’00</a>, <a href="papers/paste01.pdf">PASTE’01</a>, <a href="papers/sas04.pdf">SAS’04</a>, <a href="talks/sas04.ppt">SAS’04.ppt</a>)</span></li>
-    <li>Constraint logic for program checkers <span class="paperlinks">(<a href="papers/esop03.pdf">ESOP’03</a>, <a href="talks/esop03.ppt">ESOP’03.ppt</a>, <a href="papers/cpcv04.pdf">CP+CV’04</a>, <a href="talks/cpcv04.ppt">CP+CV’04.ppt</a>, <a href="papers/scp04.pdf">Science of Computer Programming ’04</a>)</span></li>
-    <li><i>Calvin</i>, a checker for multithreaded Java programs <span class="paperlinks">(<a href="papers/esop02.pdf">ESOP’02</a>, <a href="papers/cav02.pdf">CAV’02</a>, <a href="talks/cav2002.ppt">CAV’02.ppt</a>)</span> based on <i>thread-modular</i> reasoning <span class="paperlinks">(<a href="papers/spin03.pdf">SPIN’03</a>, <a href="talks/spin03.ppt">SPIN’03.ppt</a>)</span> and <i>reduction</i> <span class="paperlinks">(<a href="papers/smc03.pdf">MC’03</a>)</span></li>
-    <li><i>Houdini</i>, an annotation inference system for modular static checkers <span class="paperlinks">(<a href="papers/ipl00.pdf">IPL’01</a>, <a href="papers/fme01.pdf">FME’01</a>, <a href="talks/fme2001.ppt">FME’01.ppt</a>)</span></li>
-    <li><a href="http://www.plt-scheme.org/software/mrspidey/">MrSpidey</a>, an interactive static checker for Scheme <span class="paperlinks">(<a href="papers/pldi96.pdf">PLDI’96</a>, <a href="papers/thesis.pdf">Thesis</a>)</span> used in <a href="https://racket-lang.org/">DrScheme</a> <span class="paperlinks">(<a href="papers/jfp01.pdf">JFP’02</a>, <a href="papers/plilp97.pdf">PLILP’97</a>)</span> and based on <i>Componential Set-Based Analysis</i> <span class="paperlinks">(<a href="papers/toplas99.pdf">TOPLAS’99</a>, <a href="papers/pldi97.pdf">PLDI’97</a>)</span></li>
+    <li>
+      <img src="images/races.png" alt="" width="64" height="64">
+      <div>
+        <a class="pname" href="https://www.cs.williams.edu/~freund/races/index.html">Data Race Detection</a>: Precise, Efficient Dynamic Race Detectors
+        <p>FastTrack made precise happens-before race detection about as fast as imprecise lockset analysis; follow-on work cut overhead further and verified it.</p>
+        <span class="paperlinks">(<a href="papers/pldi09.pdf">PLDI’09</a>, <a href="papers/pldi10.pdf">PLDI’10</a>, <a href="papers/popl12a.pdf">POPL’12</a>, <a href="papers/ecoop13.pdf">ECOOP’13</a>, <a href="papers/15ase.pdf">ASE’15</a>, <a href="papers/pldi17.pdf">PLDI’17</a>, <a href="papers/18ppopp.pdf">PPoPP’18</a>)</span>
+      </div>
+    </li>
+    <li>
+      <img src="images/coop.png" alt="" width="64" height="64">
+      <div>
+        <a class="pname" href="https://www.cs.williams.edu/~freund/coop/">Cooperable Concurrency</a>: A Concurrent Programming Methodology
+        <p>Threads may be interrupted only at explicit <i>yield</i> annotations, so programmers can reason about preemptive code as if it ran under cooperative scheduling.</p>
+        <span class="paperlinks">(<a href="papers/tldi10.pdf">TLDI’10</a>, <a href="papers/ppopp11.pdf">PPoPP’11</a>, <a href="papers/rv11.pdf">RV’11</a>, <a href="papers/issta12a.pdf">ISSTA’12</a>, <a href="papers/scp15.pdf">SCP’15</a>)</span>
+      </div>
+    </li>
+    <li>
+      <img src="images/atom.png" alt="" width="64" height="64">
+      <div>
+        <a class="pname" href="atom.html">Atomicity</a>: Specifying and Checking Atomic Code Blocks
+        <p>An atomic block behaves as if it ran without interruption, so it can be reasoned about sequentially. Type systems and dynamic checkers (Atomizer, Velodrome) verify these specifications.</p>
+        <span class="paperlinks">(<a href="papers/pldi03.pdf">PLDI’03</a>, <a href="papers/popl04.pdf">POPL’04</a>, <a href="papers/pldi08.pdf">PLDI’08</a>, <a href="atom.html">all papers</a>)</span>
+      </div>
+    </li>
+    <li>
+      <img src="images/hybrid.png" alt="" width="64" height="64">
+      <div>
+        <span class="pname">Hybrid Type Checking</span>: Combining Static and Dynamic Checking
+        <p>Precise specifications such as refinement types are checked statically where possible and enforced with run-time casts otherwise, as implemented in the Sage language.</p>
+        <span class="paperlinks">(<a href="papers/popl06-hybrid.pdf">POPL’06</a>, <a href="papers/toplas09.pdf">TOPLAS’10</a>, <a href="papers/sage-tr.pdf">Sage technical report</a>)</span>
+      </div>
+    </li>
+    <li>
+      <img src="images/esc.png" alt="" width="64" height="64">
+      <div>
+        <span class="pname">Extended Static Checking</span>: Finding Errors with a Theorem Prover
+        <p>ESC/Java uses verification conditions and an automatic theorem prover to catch errors such as null dereferences and index-out-of-bounds in annotated Java programs.</p>
+        <span class="paperlinks">(<a href="papers/popl01.pdf">POPL’01</a>, <a href="talks/popl2001.ppt">POPL’01.ppt</a>, <a href="papers/pldi02.pdf">PLDI’02</a>, <a href="papers/popl02.pdf">POPL’02</a>)</span>
+      </div>
+    </li>
+    <li>
+      <img src="images/staticrace.png" alt="" width="64" height="64">
+      <div>
+        <span class="pname">Static Race Detection</span>: Types for Safe Locking
+        <p>Type systems that guarantee race freedom by checking that each shared variable is consistently protected by a lock, with type inference to scale to large programs.</p>
+        <span class="paperlinks">(<a href="papers/esop99.pdf">ESOP’99</a>, <a href="papers/concur99.pdf">CONCUR’99</a>, <a href="papers/pldi00.pdf">PLDI’00</a>, <a href="papers/paste01.pdf">PASTE’01</a>, <a href="papers/sas04.pdf">SAS’04</a>, <a href="talks/sas04.ppt">SAS’04.ppt</a>)</span>
+      </div>
+    </li>
+    <li>
+      <img src="images/clp.png" alt="" width="64" height="64">
+      <div>
+        <span class="pname">Constraint Logic for Program Checkers</span>: Software Model Checking via CLP
+        <p>Software model checking expressed as constraint logic queries, refined iteratively until a property is proved or a counterexample is found.</p>
+        <span class="paperlinks">(<a href="papers/esop03.pdf">ESOP’03</a>, <a href="talks/esop03.ppt">ESOP’03.ppt</a>, <a href="papers/cpcv04.pdf">CP+CV’04</a>, <a href="talks/cpcv04.ppt">CP+CV’04.ppt</a>, <a href="papers/scp04.pdf">SCP’04</a>)</span>
+      </div>
+    </li>
+    <li>
+      <img src="images/calvin.png" alt="" width="64" height="64">
+      <div>
+        <span class="pname">Calvin</span>: A Checker for Multithreaded Java Programs
+        <p>Verifies each thread separately against a specification of how other threads may interfere (thread-modular reasoning), using reduction to treat atomic blocks as single steps.</p>
+        <span class="paperlinks">(<a href="papers/esop02.pdf">ESOP’02</a>, <a href="papers/cav02.pdf">CAV’02</a>, <a href="talks/cav2002.ppt">CAV’02.ppt</a>, <a href="papers/spin03.pdf">SPIN’03</a>, <a href="talks/spin03.ppt">SPIN’03.ppt</a>, <a href="papers/smc03.pdf">MC’03</a>)</span>
+      </div>
+    </li>
+    <li>
+      <img src="images/houdini.png" alt="" width="64" height="64">
+      <div>
+        <span class="pname">Houdini</span>: Annotation Inference for Modular Checkers
+        <p>Guesses many candidate annotations, then uses ESC/Java to refute the invalid ones until the rest are consistent.</p>
+        <span class="paperlinks">(<a href="papers/ipl00.pdf">IPL’01</a>, <a href="papers/fme01.pdf">FME’01</a>, <a href="talks/fme2001.ppt">FME’01.ppt</a>)</span>
+      </div>
+    </li>
+    <li>
+      <img src="images/mrspidey.png" alt="" width="64" height="64">
+      <div>
+        <a class="pname" href="http://www.plt-scheme.org/software/mrspidey/">MrSpidey</a>: An Interactive Static Debugger for Scheme
+        <p>Uses set-based analysis to find potential run-time errors and explain them graphically in <a href="https://racket-lang.org/">DrScheme</a>; componential analysis lets it scale module by module.</p>
+        <span class="paperlinks">(<a href="papers/pldi96.pdf">PLDI’96</a>, <a href="papers/thesis.pdf">Thesis</a>, <a href="papers/plilp97.pdf">PLILP’97</a>, <a href="papers/pldi97.pdf">PLDI’97</a>, <a href="papers/toplas99.pdf">TOPLAS’99</a>, <a href="papers/jfp01.pdf">JFP’02</a>)</span>
+      </div>
+    </li>
   </ul>
 </section>
 

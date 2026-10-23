@@ -38,12 +38,13 @@
   <div class="wrap">
     <a class="home" href="#top">Cormac Flanagan</a>
     <ul>
+      <li><a href="#research">Research</a></li>
       <li><a href="#honors">Honors</a></li>
       <li><a href="#publications">Publications</a></li>
       <li><a href="#service">Service</a></li>
       <li><a href="#students">Students</a></li>
       <li><a href="#talks">Talks</a></li>
-      <li><a href="#projects">Projects</a></li>
+      <li><a href="#earlier">Earlier</a></li>
       <li><a href="#proceedings">Proceedings</a></li>
     </ul>
   </div>
@@ -82,6 +83,36 @@
 <p class="intro">My research is in programming languages and software engineering, with a focus on tools and techniques for building reliable software. Much of my work addresses concurrency, including data race detection (FastTrack, RoadRunner), atomicity, and verification of concurrent programs (Anchor, Mover Logic), along with static checking (ESC/Java, Houdini), hybrid and gradual type systems, and dynamic information flow security (faceted execution).</p>
 
 <p class="news"><span class="tag">New</span> <span><a href="https://arxiv.org/abs/2605.01560">FlowBook: Enforcing Reproducibility in Computational Notebooks</a> (with Stephen Freund, Emery Berger, and Eunice Jun), arXiv 2026</span></p>
+
+<section id="research">
+  <h2>Current Research <a class="aside" href="#earlier">Earlier projects &darr;</a></h2>
+  <ul class="projects">
+    <li>
+      <img src="images/flowbook.png" alt="" width="64" height="64">
+      <div>
+        <a class="pname" href="https://arxiv.org/abs/2605.01560">FlowBook</a>: Enforcing Reproducibility in Computational Notebooks
+        <p>FlowBook is a JupyterLab extension that enforces rerun consistency: re-executing any cell from the current state would produce a result consistent with a top-to-bottom execution of the notebook, regardless of which cells have been run, modified, and rerun.</p>
+        <span class="paperlinks">(<a href="https://arxiv.org/abs/2605.01560">arXiv’26</a>)</span>
+      </div>
+    </li>
+    <li>
+      <img src="images/keystone.png" alt="" width="64" height="64">
+      <div>
+        <a class="pname" href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2243637">Keystone</a>: Modular Concurrent Software Verification
+        <p>Keystone addresses the fundamental challenge of concurrent software verification: specifying and reasoning about thread interference. The project leverages a new specification notation for thread interference, embeds those specifications into a new program logic, called Mover Logic, and explores new accompanying verification techniques.</p>
+        <span class="paperlinks">(<a href="papers/20oopsla.pdf">OOPSLA’20</a>, <a href="papers/24ecoop.pdf">ECOOP’24</a>, <a href="https://melvin-demo.gss8b1ryfh8jc.us-east-1.cs.amazonlightsail.com/">Melvin demo</a>)</span>
+      </div>
+    </li>
+    <li>
+      <img src="images/ifc.png" alt="" width="64" height="64">
+      <div>
+        <span class="pname">Information Flow Control</span>: Dynamic Enforcement of Confidentiality
+        <p>Information flow control ensures that programs cannot leak confidential data to unauthorized observers. This project developed purely dynamic enforcement mechanisms, notably faceted execution, which simulates a separate run of the program for each observer, and applied them to web browsers, database-backed applications, and serverless computing.</p>
+        <span class="paperlinks">(<a href="papers/fast-and-slowTR.pdf">TR’21</a>, <a href="papers/20csf.pdf">CSF’20</a>, <a href="papers/19csf.pdf">CSF’19</a>, <a href="papers/18oopsla.pdf">OOPSLA’18</a>, <a href="papers/18ccs.pdf">CCS’18</a>, <a href="papers/18www.pdf">WWW’18</a>, <a href="papers/toplas17.pdf">TOPLAS’17</a>, <a href="papers/17plas.pdf">PLAS’17</a>, <a href="papers/16pldi.pdf">PLDI’16</a>, <a href="papers/16post.pdf">POST’16</a>, <a href="papers/UCSC-SOE-14-07.pdf">TR’14</a>, <a href="papers/plas13.pdf">PLAS’13</a>, <a href="papers/aplas12.pdf">APLAS’12</a>, <a href="papers/popl12b.pdf">POPL’12</a>, <a href="papers/stop11.pdf">STOP’11</a>, <a href="papers/plas10.pdf">PLAS’10</a>, <a href="papers/plas09.pdf">PLAS’09</a>)</span>
+      </div>
+    </li>
+  </ul>
+</section>
 
 <section id="honors">
   <h2>Honors and Awards</h2>
@@ -1251,36 +1282,8 @@
   </ul>
 </section>
 
-<section id="projects">
-  <h2>Research Projects</h2>
-  <h3>Recent</h3>
-  <ul class="projects">
-    <li>
-      <img src="images/flowbook.png" alt="" width="64" height="64">
-      <div>
-        <a class="pname" href="https://arxiv.org/abs/2605.01560">FlowBook</a>: Enforcing Reproducibility in Computational Notebooks
-        <p>FlowBook is a JupyterLab extension that enforces rerun consistency: re-executing any cell from the current state would produce a result consistent with a top-to-bottom execution of the notebook, regardless of which cells have been run, modified, and rerun.</p>
-        <span class="paperlinks">(<a href="https://arxiv.org/abs/2605.01560">arXiv’26</a>)</span>
-      </div>
-    </li>
-    <li>
-      <img src="images/keystone.png" alt="" width="64" height="64">
-      <div>
-        <a class="pname" href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2243637">Keystone</a>: Modular Concurrent Software Verification
-        <p>Keystone addresses the fundamental challenge of concurrent software verification: specifying and reasoning about thread interference. The project leverages a new specification notation for thread interference, embeds those specifications into a new program logic, called Mover Logic, and explores new accompanying verification techniques.</p>
-        <span class="paperlinks">(<a href="papers/20oopsla.pdf">OOPSLA’20</a>, <a href="papers/24ecoop.pdf">ECOOP’24</a>, <a href="https://melvin-demo.gss8b1ryfh8jc.us-east-1.cs.amazonlightsail.com/">Melvin demo</a>)</span>
-      </div>
-    </li>
-    <li>
-      <img src="images/ifc.png" alt="" width="64" height="64">
-      <div>
-        <span class="pname">Information Flow Control</span>: Dynamic Enforcement of Confidentiality
-        <p>Information flow control ensures that programs cannot leak confidential data to unauthorized observers. This project developed purely dynamic enforcement mechanisms, notably faceted execution, which simulates a separate run of the program for each observer, and applied them to web browsers, database-backed applications, and serverless computing.</p>
-        <span class="paperlinks">(<a href="papers/fast-and-slowTR.pdf">TR’21</a>, <a href="papers/20csf.pdf">CSF’20</a>, <a href="papers/19csf.pdf">CSF’19</a>, <a href="papers/18oopsla.pdf">OOPSLA’18</a>, <a href="papers/18ccs.pdf">CCS’18</a>, <a href="papers/18www.pdf">WWW’18</a>, <a href="papers/toplas17.pdf">TOPLAS’17</a>, <a href="papers/17plas.pdf">PLAS’17</a>, <a href="papers/16pldi.pdf">PLDI’16</a>, <a href="papers/16post.pdf">POST’16</a>, <a href="papers/UCSC-SOE-14-07.pdf">TR’14</a>, <a href="papers/plas13.pdf">PLAS’13</a>, <a href="papers/aplas12.pdf">APLAS’12</a>, <a href="papers/popl12b.pdf">POPL’12</a>, <a href="papers/stop11.pdf">STOP’11</a>, <a href="papers/plas10.pdf">PLAS’10</a>, <a href="papers/plas09.pdf">PLAS’09</a>)</span>
-      </div>
-    </li>
-  </ul>
-  <h3>Earlier</h3>
+<section id="earlier">
+  <h2>Earlier Projects</h2>
   <ul class="projects">
     <li>
       <img src="images/roadrunner.png" alt="" width="64" height="64">
